@@ -1,0 +1,41 @@
+﻿<Window x:Class="WpfAppMaterialDis.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppMaterialDis"
+        mc:Ignorable="d"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Background="White">
+                <Rectangle Width="200" Height="100" Margin="10" Stroke="Black"  />
+                <StackPanel>
+                    <TextBlock Margin="0,-30,0,0" Text="2312321"></TextBlock>
+                </StackPanel>
+                <Rectangle Fill="LightPink" Width="200" Height="100" RadiusX="15" RadiusY="15" Margin="10" />
+             </StackPanel>
+        </StackPanel>
+        <Rectangle ></Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="100" Margin="487,159,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+        <Border BorderBrush="Green" Margin="75,279,325,121" BorderThickness="2">
+            <StackPanel>
+                <TextBox Text="323213" Margin="0,-10,0,0" Background="White" Width="100"/>
+                
+            </StackPanel>
+        </Border>
+
+        <GroupBox Header="hgfdgfd" >
+            <StackPanel>
+                <TextBlock Text="3123213"/>
+            </StackPanel>
+        </GroupBox>
+    </Grid>
+</Window>
