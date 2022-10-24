@@ -6,13 +6,13 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:WpfAppMaterialDis"
         mc:Ignorable="d"
-         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
-     TextElement.FontWeight="Regular"
-     TextElement.FontSize="13"
-     TextOptions.TextFormattingMode="Ideal"
-     TextOptions.TextRenderingMode="Auto"
-     Background="{DynamicResource MaterialDesignPaper}"
-     FontFamily="{DynamicResource MaterialDesignFont}"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
         Title="Window1" Height="550" Width="850">
     <Grid HorizontalAlignment="Stretch">
         <TabControl>
@@ -20,49 +20,50 @@
                 <TabControl TabStripPlacement="Left"  >
                     <TabItem Header="Основная информация">
                         <StackPanel Orientation="Vertical">
-                            <StackPanel Orientation="Horizontal" Margin="0,20,0,0" >
+                            <StackPanel Orientation="Horizontal" Margin="0,20,0,0" >                                
                                 <TextBlock   FontSize="20" Text=" Тип"  Margin="0,0,0,0" VerticalAlignment="Center"   />
-                                <ComboBox Width="350" FontSize="20" Name="CombTypeTech" Margin="214,0,0,0"  Style="{StaticResource MaterialDesignOutlinedComboBox}" materialDesign:HintAssist.Hint="Типы" />                                                             
-                            </StackPanel>
+                                <ComboBox Width="350" FontSize="20" Name="CombTypeTech" Margin="222.4,0,0,0"  Style="{StaticResource MaterialDesignOutlinedComboBox}" materialDesign:HintAssist.Hint="Типы" />                                                             
+                            </StackPanel>                           
+                           
                             <StackPanel Orientation="Horizontal"  Margin="0,20,0,0">
                                 <TextBlock   FontSize="20" VerticalAlignment="Center" Text=" Организация " Margin="0,0,0,0" />
-                                <ComboBox Width="350"  FontSize="20" Name="CombIDOrgamniz" Margin="96,0,0,0"  Style="{StaticResource MaterialDesignOutlinedComboBox}" materialDesign:HintAssist.Hint="Организации" />  
+                                <ComboBox Width="350"  FontSize="20" Name="CombIDOrgamniz" Margin="128.3,0,0,0"  Style="{StaticResource MaterialDesignOutlinedComboBox}" materialDesign:HintAssist.Hint="Организации" />  
                             </StackPanel>
                             <StackPanel Orientation="Horizontal"  Margin="0,20,0,0">
                                 <TextBlock   FontSize="20" Text=" Кабинет "  VerticalAlignment="Center"   Margin="0 0 0 0" />
-                                <TextBox Name="TextIDKabuneta"  VerticalAlignment="Top"   Width="350"  FontSize="20" Margin="152,0,0,0" materialDesign:HintAssist.Hint="Кабинет"  MaxLength="22" Style="{StaticResource MaterialDesignOutlinedTextBox}" TextWrapping="Wrap"/>                              
+                                <TextBox Name="TextIDKabuneta"  VerticalAlignment="Top"   Width="350"  FontSize="20" Margin="173,0,0,0" materialDesign:HintAssist.Hint="Кабинет"  MaxLength="22" Style="{StaticResource MaterialDesignOutlinedTextBox}" TextWrapping="Wrap"/>                              
                             </StackPanel>
                             <StackPanel Orientation="Horizontal"  Margin="0,20,0,0">
                                 <TextBlock   FontSize="20" Text=" Имя" VerticalAlignment="Center"   Margin="0,0,0,0" HorizontalAlignment="Right" />
-                                <TextBox  VerticalAlignment="Top"   Width="350"  FontSize="20" Margin="205,0,0,0" materialDesign:HintAssist.Hint="Имя"  MaxLength="22" Style="{StaticResource MaterialDesignOutlinedTextBox}" TextWrapping="Wrap"/>
+                                <TextBox  VerticalAlignment="Top"   Width="350"  FontSize="20" Margin="215.7,0,0,0" materialDesign:HintAssist.Hint="Имя"  MaxLength="22" Style="{StaticResource MaterialDesignOutlinedTextBox}" TextWrapping="Wrap"/>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal"  Margin="0,20,0,0">
                                 <TextBlock   FontSize="20" Text=" Номер " VerticalAlignment="Center"   Margin="0,0,0,0"/>
-                                <TextBox Name="TextName" VerticalAlignment="Top"   Width="350"  FontSize="20" Margin="171,0,0,0" materialDesign:HintAssist.Hint="Номер"  MaxLength="22" Style="{StaticResource MaterialDesignOutlinedTextBox}" TextWrapping="Wrap" />
+                                <TextBox Name="TextName" VerticalAlignment="Top"   Width="350"  FontSize="20" Margin="188.5,0,0,0" materialDesign:HintAssist.Hint="Номер"  MaxLength="22" Style="{StaticResource MaterialDesignOutlinedTextBox}" TextWrapping="Wrap" />
                             </StackPanel>
                         </StackPanel>
                     </TabItem>
                     <TabItem Header="Даты работы ">
                         <StackPanel Orientation="Vertical" HorizontalAlignment="Left">
                             <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
-                                <TextBlock   FontSize="25" Text=" Дата начала" Margin="5,0,0,0" VerticalAlignment="Center" />
-                                <DatePicker Width="350" FontSize="25" Name="TextDataStart" Margin="103,0,0,0" materialDesign:HintAssist.Hint="Дата начала" Style="{StaticResource MaterialDesignOutlinedDatePicker}" />
+                                <TextBlock   FontSize="20" Text=" Дата начала" Margin="5,0,0,0" VerticalAlignment="Center" />
+                                <DatePicker Width="350" FontSize="20" Name="TextDataStart" Margin="133.4,0,0,0" materialDesign:HintAssist.Hint="Дата начала" Style="{StaticResource MaterialDesignOutlinedDatePicker}" />
                             </StackPanel>
                             <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
-                                <TextBlock   FontSize="25" Text=" Дата окончания" Margin="5,0,0,0" VerticalAlignment="Center" />
-                                <DatePicker Width="350" FontSize="25" Name="TextDataEnd"  Margin="61,0,0,0" materialDesign:HintAssist.Hint="Дата конца" Style="{StaticResource MaterialDesignOutlinedDatePicker}" />
+                                <TextBlock   FontSize="20" Text=" Дата окончания" Margin="5,0,0,0" VerticalAlignment="Center" />
+                                <DatePicker Width="350" FontSize="20" Name="TextDataEnd"  Margin="99.3,0,0,0" materialDesign:HintAssist.Hint="Дата конца" Style="{StaticResource MaterialDesignOutlinedDatePicker}" />
                             </StackPanel>
                         </StackPanel>
                     </TabItem>
                     <TabItem Header="Активность">
                         <StackPanel Orientation="Vertical" HorizontalAlignment="Left">
                             <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
-                                <TextBlock   FontSize="25" Text=" Статус" Margin="5,0,0,0" VerticalAlignment="Center" />
-                                <ComboBox Width="350" FontSize="25" Name="CombIDStatus" Margin="172,0,0,0"  Style="{StaticResource MaterialDesignOutlinedComboBox}" materialDesign:HintAssist.Hint="Статус" />                                
+                                <TextBlock   FontSize="20" Text=" Статус" Margin="5,0,0,0" VerticalAlignment="Center" />
+                                <ComboBox Width="350" FontSize="20" Name="CombIDStatus" Margin="188.3,0,0,0"  Style="{StaticResource MaterialDesignOutlinedComboBox}" materialDesign:HintAssist.Hint="Статус" />                                
                             </StackPanel>
                             <StackPanel Orientation="Horizontal"  Margin="0,20,0,0">
-                                <TextBlock   FontSize="25" Text="Работа" Margin="5,0,0,0" VerticalAlignment="Center" />
-                                <ComboBox Width="350" FontSize="25" Name="CombIDWorks" Margin="174,0,0,0"  Style="{StaticResource MaterialDesignOutlinedComboBox}" materialDesign:HintAssist.Hint="Работоспособность"/>
+                                <TextBlock   FontSize="20" Text="Работа" Margin="5,0,0,0" VerticalAlignment="Center" />
+                                <ComboBox Width="350" FontSize="20" Name="CombIDWorks" Margin="190,0,0,0"  Style="{StaticResource MaterialDesignOutlinedComboBox}" materialDesign:HintAssist.Hint="Работоспособность"/>
                             </StackPanel>
                         </StackPanel>
                     </TabItem>
@@ -77,49 +78,49 @@
                     </TabItem>
                 </TabControl>
             </TabItem>
-            <TabItem Header="Системный блок">
+            <TabItem Header="Системный блок" >
                 <TabControl TabStripPlacement="Left">
-                    <TabItem Header="Процессор" >
-                        <StackPanel Orientation="Vertical" Width="auto" HorizontalAlignment="Left" >
+                    <TabItem Header="Процессор"  >
+                        <StackPanel Orientation="Vertical" Width="auto" HorizontalAlignment="Left"  >
                             <StackPanel Orientation="Horizontal"  Margin="0,20,0,0">
-                                <TextBlock   FontSize="25" Text="Модель"  Margin="5,0,0,0" VerticalAlignment="Center" />
-                                <TextBox Width="350" FontSize="25" Name="TextProccModel" Margin="179,0,0,0" materialDesign:HintAssist.Hint="Модель"  MaxLength="22"  Style="{StaticResource MaterialDesignOutlinedTextBox}" TextWrapping="Wrap" />
+                                <TextBlock   FontSize="20" Text="Модель"  Margin="5,0,0,0" VerticalAlignment="Center" />
+                                <TextBox Width="350" FontSize="20" Name="TextProccModel" Margin="196,0,0,0" materialDesign:HintAssist.Hint="Модель"  MaxLength="22"  Style="{StaticResource MaterialDesignOutlinedTextBox}" TextWrapping="Wrap" />
                             </StackPanel>
                             <StackPanel Orientation="Horizontal"  Margin="0,20,0,0">
-                                <TextBlock   FontSize="25" Text="Тактовая частота"  Margin="5,0,0,0" VerticalAlignment="Center" />
-                                <TextBox Width="350" FontSize="25" Name="TextSpeed" Margin="65,0,0,0"  materialDesign:HintAssist.Hint="Тактовая частота"  MaxLength="22"  Style="{StaticResource MaterialDesignOutlinedTextBox}" TextWrapping="Wrap"/>
+                                <TextBlock   FontSize="20" Text="Тактовая частота"  Margin="5,0,0,0" VerticalAlignment="Center" />
+                                <TextBox Width="350" FontSize="20" Name="TextSpeed" Margin="105,0,0,0"  materialDesign:HintAssist.Hint="Тактовая частота"  MaxLength="22"  Style="{StaticResource MaterialDesignOutlinedTextBox}" TextWrapping="Wrap"/>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal"  Margin="0,20,0,0">
-                                <TextBlock   FontSize="25" Text="Производитель"  Margin="5,0,0,0" VerticalAlignment="Center" />
-                                <ComboBox Width="350" FontSize="25" Name="CombProccMaker" Margin="87,0,0,0" Style="{StaticResource MaterialDesignOutlinedComboBox}" materialDesign:HintAssist.Hint="Производители" />
+                                <TextBlock   FontSize="20" Text="Производитель"  Margin="5,0,0,0" VerticalAlignment="Center" />
+                                <ComboBox Width="350" FontSize="20" Name="CombProccMaker" Margin="123,0,0,0" Style="{StaticResource MaterialDesignOutlinedComboBox}" materialDesign:HintAssist.Hint="Производители" />
                             </StackPanel>
                         </StackPanel>
                     </TabItem>
                     <TabItem Header="Материнская плата">
                         <StackPanel Orientation="Vertical">
                             <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
-                                <TextBlock   FontSize="25" Text="Модель"  Margin="5,0,0,0" VerticalAlignment="Center" />
-                                <TextBox Width="350" FontSize="25" Name="TextMatePlatModel" Margin="179,0,0,0"   materialDesign:HintAssist.Hint="Модель"  MaxLength="22"  Style="{StaticResource MaterialDesignOutlinedTextBox}" TextWrapping="Wrap" />
+                                <TextBlock   FontSize="20" Text="Модель"  Margin="5,0,0,0" VerticalAlignment="Center" />
+                                <TextBox Width="350" FontSize="20" Name="TextMatePlatModel" Margin="196,0,0,0"   materialDesign:HintAssist.Hint="Модель"  MaxLength="22"  Style="{StaticResource MaterialDesignOutlinedTextBox}" TextWrapping="Wrap" />
                             </StackPanel>
                             <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
-                                <TextBlock   FontSize="25" Text="Производитель"  Margin="5,0,0,0" VerticalAlignment="Center" />
-                                <ComboBox Width="350" FontSize="25" Name="CombMatePlatMaker" Margin="87,0,0,0"  Style="{StaticResource MaterialDesignOutlinedComboBox}" materialDesign:HintAssist.Hint="Производитель" />
+                                <TextBlock   FontSize="20" Text="Производитель"  Margin="5,0,0,0" VerticalAlignment="Center" />
+                                <ComboBox Width="350" FontSize="20" Name="CombMatePlatMaker" Margin="123,0,0,0"  Style="{StaticResource MaterialDesignOutlinedComboBox}" materialDesign:HintAssist.Hint="Производитель" />
                             </StackPanel>
                         </StackPanel>
                     </TabItem>
                     <TabItem Header="Видеокарта">
                         <StackPanel Orientation="Vertical">
                             <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
-                                <TextBlock   FontSize="25" Text="Модель"  Margin="5,0,0,0" VerticalAlignment="Center" />
-                                <TextBox Width="350" FontSize="25" Name="TextVideoModel"  Margin="179,0,0,0"  materialDesign:HintAssist.Hint="Объем"  MaxLength="22"  Style="{StaticResource MaterialDesignOutlinedTextBox}" TextWrapping="Wrap" />
+                                <TextBlock   FontSize="20" Text="Модель"  Margin="5,0,0,0" VerticalAlignment="Center" />
+                                <TextBox Width="350" FontSize="20" Name="TextVideoModel"  Margin="196,0,0,0"  materialDesign:HintAssist.Hint="Объем"  MaxLength="22"  Style="{StaticResource MaterialDesignOutlinedTextBox}" TextWrapping="Wrap" />
                             </StackPanel>
                             <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
-                                <TextBlock   FontSize="25" Text="Объем видеопамяти"  Margin="5,0,0,0" VerticalAlignment="Center" />
-                                <TextBox Width="350" FontSize="25" Name="TextVideoMemory" Margin="28,0,0,0"  materialDesign:HintAssist.Hint="Тактовая частота"  MaxLength="22"  Style="{StaticResource MaterialDesignOutlinedTextBox}" TextWrapping="Wrap" />
+                                <TextBlock   FontSize="20" Text="Объем видеопамяти"  Margin="5,0,0,0" VerticalAlignment="Center" />
+                                <TextBox Width="350" FontSize="20" Name="TextVideoMemory" Margin="75.2,0,0,0"  materialDesign:HintAssist.Hint="Тактовая частота"  MaxLength="22"  Style="{StaticResource MaterialDesignOutlinedTextBox}" TextWrapping="Wrap" />
                             </StackPanel>
                             <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
-                                <TextBlock   FontSize="25" Text="Производитель"  Margin="5,0,0,0" VerticalAlignment="Center" />
-                                <ComboBox Width="350" FontSize="25" Name="CombVidieoMaker" Margin="87,0,0,0" Style="{StaticResource MaterialDesignOutlinedComboBox}" materialDesign:HintAssist.Hint="Организации" />
+                                <TextBlock   FontSize="20" Text="Производитель"  Margin="5,0,0,0" VerticalAlignment="Center" />
+                                <ComboBox Width="350" FontSize="20" Name="CombVidieoMaker" Margin="123,0,0,0" Style="{StaticResource MaterialDesignOutlinedComboBox}" materialDesign:HintAssist.Hint="Производители" />
                             </StackPanel>                         
                         </StackPanel>
                     </TabItem>
